@@ -1,0 +1,113 @@
+@import "../../../styles.scss";
+
+.contact {
+    // height: 80vh;
+    .bactxt {
+        font-size: 20vw;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+    .contact-info {
+        background: $priamryColor;
+        padding: 50px 0px;
+        .cont-info {
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 10px;
+            }
+            .item {
+                h6 {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #999;
+                    line-height: 1.7;
+                }
+            }
+            .social {
+                margin-top: 50px !important;
+                a {
+                    i {
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 0.01);
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        font-size: 13px;
+                        color: $btnColor;
+                        transition: 0.3s ease-in-out all;
+                        &:hover {
+                            background: rgb(255 255 255 / 8%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .capt {
+        position: absolute;
+        bottom: 8pc;
+        h2 {
+            font-size: 60px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                font-size: 20px;
+                font-weight: 300;
+                text-transform: capitalize;
+                color: $btnColor;
+            }
+        }
+
+        p {
+            color: #c8c8c8;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 2;
+            margin: 0;
+        }
+    }
+
+    .form {
+        select {
+            background: transparent;
+            border: 1px solid #ced4da61;
+            border-radius: 0;
+            margin: 30px 0;
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgb(0 235 170 / 25%);
+            }
+        }
+        input,
+        textarea {
+            outline: none;
+            color: #fff;
+            width: 100%;
+            padding: 15px 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.copyrights {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.copyrights p {
+    font-size: 12px;
+    color: #fff;
+}
+.copyrights p a {
+    color: $btnColor;
+}

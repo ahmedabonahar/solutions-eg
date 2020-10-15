@@ -1,0 +1,20 @@
+$mainColor:  #11141b;
+$priamryColor: #0c0f16;
+$overlayColor: #11141b98;
+$btnColor: #75dab4;
+$textColor: #ececec;
+$color-border: 1px solid #cccccc;
+$boxShadow: 0px 0px 1.5625vw rgba(0, 0, 0, 0.3);
+$gray: gray;
+
+@mixin backgroun-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

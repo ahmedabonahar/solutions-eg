@@ -1,1 +1,440 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $mainColor;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+// Global
+body {
+  overflow-x: hidden !important;
+  position: relative;
+  background: $mainColor;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+s,
+li,
+input,
+textarea,
+button {
+  font-family: 'El Messiri', sans-serif;
+    color: $textColor;
+}
+
+option {
+  font-family: 'El Messiri', sans-serif;
+}
+
+span {
+  font-family: 'El Messiri', sans-serif;
+}
+
+.overlay {
+  height: 100vh;
+  background: $overlayColor;
+}
+
+
+
+.btn-praimry {
+  background: $btnColor;
+  color: #ffff;
+  position: relative;
+  padding: 0.3em 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+
+
+.btn-praimry::after, .btn-praimry::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.btn-praimry::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: $btnColor;
+  border-right-color: $btnColor;
+}
+.btn-praimry::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: $btnColor;
+  border-left-color: $btnColor;
+}
+.btn-praimry:hover:after, .btn-praimry:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
+  padding-left: 7.36292428198%;
+  padding-right: 7.36292428198%;
+}
+
+.uk-section {
+  min-height: 100vh;
+}
+
+.padding-y {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.uk-modal-body {
+  padding: 15px;
+}
+
+.primary-btn {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0.75rem 4vw;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  img {
+    margin-right: 7.5px;
+  }
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  padding: 0.75rem 2.6041666667vw;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.primary-link {
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.view-btn {
+  font-size: 1.0416666666666665vw;
+  color: $mainColor;
+}
+
+
+
+
+.header-jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: transparent linear-gradient(to left, #000000c4 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+  }
+}
+
+.height-70 {
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.height-100 {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-box {
+  width: 55%;
+  display: block;
+  margin: 3rem auto;
+  
+
+
+  .logo-box {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.grey-side {
+  background-color: #4F5858;
+
+  .content-box {
+
+    h2 {
+      color: white;
+    }
+
+    ul {
+      li {
+        color: white;
+      }
+    }
+
+    h6 {
+      color: white;
+    }
+  }
+}
+
+.home,
+.design,
+.media {
+  overflow-x: hidden;
+}
+
+.home {
+
+  .swiper-container-horizontal>.swiper-pagination-progressbar,
+  .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    left: 50% !important;
+    top: auto;
+    bottom: 85px !important;
+    transform: translateX(-50%);
+    height: 4px !important;
+    width: 280px !important;
+    border-radius: 0;
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: white;
+  }
+}
+
+.design {
+
+  .swiper-container-horizontal>.swiper-pagination-progressbar,
+  .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 300px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    top: auto;
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: $mainColor;
+  }
+
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 0;
+    right: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 0;
+    left: auto;
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: none;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: none;
+}
+
+
+@media (max-width: 767px) {
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  .padding-y {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 16px !important;
+  }
+
+  .content-box {
+    width: 100%;
+  }
+
+  .header-jumbotron {
+    .overlay {
+      width: 100% !important;
+    }
+  }
+
+
+  .home {
+
+    .swiper-container-horizontal>.swiper-pagination-progressbar,
+    .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+      bottom: 30px !important;
+      width: 280px !important;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background: white;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  .header-jumbotron {
+    min-height: 50vh !important;
+  }
+
+  .height-70 {
+    height: 45vh;
+  }
+
+  .content-box {
+    width: 75%;
+  }
+}
+
+
+
+// font arbic
+
+.arabic-font {
+  direction: rtl !important;
+  text-align: right !important;
+
+  .footer-sec {
+    .contact-info {
+      margin-right: 15% !important;
+      margin-left: 0 !important;
+      @media only screen and (max-width: 768px) {
+        margin: 0 !important;
+      }
+    }
+  }
+
+
+}
+
+
+/*--------------------------fonts----------------------------*/
+// @font-face {
+//   font-family: GEAwtar;
+//   font-display: auto;
+//   src: url("assets/fonts/Primary/Tajawal/Tajawal-Regular.ttf") format("truetype");
+// }
+
+// // @font-face {
+// //   font-family: ph_regular;
+// //   font-display: auto;
+// //   src: url("assets/fonts/Primary/Philosopher/philosopher-regular.woff2") format("woff2");
+// // }
+
+// // @font-face {
+// //   font-family: ph_bold;
+// //   font-display: auto;
+// //   src: url("assets/fonts/Primary/Philosopher/philosopher-bold.woff2") format("woff2");
+// // }
+
+// @font-face {
+//   font-family: GEDinkum;
+//   font-display: auto;
+//   src: url("assets/fonts/Secondary/GEDinkum-Regular.woff2") format("woff2");
+// }

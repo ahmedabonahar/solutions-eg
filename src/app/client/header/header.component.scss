@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+
+//   navbar
+// -------------
+.uk-navbar-container {
+  background: #ffffff00;
+  @include flexCenter();
+  .uk-navbar-dropdown {
+    top: 60px !important;
+    left: 44% !important;
+    text-align: center;
+  }
+  img {
+    width: 10%;
+  }
+
+}
+
+.lang-btn {
+  position: fixed;
+  right: 0;
+  top: 49%;
+  z-index: 99999;
+  button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-right: none;
+    box-shadow: 0 2px 10px rgb(102 187 156);
+  }
+}
+
+
+
+// section responsice
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}

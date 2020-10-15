@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+
+
+.footer-contact {
+    background-image: url(../../../assets/img/footer-contact.jpg);
+    @include  backgroun-image();
+    background-attachment: fixed;
+    .overlay {
+        height: auto;
+    }
+    .row {
+      @include flexCenter();
+    padding: 50px 0px;
+
+    }
+    h2 {
+      text-align: center;
+      font-size: 5vw;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.836);
+      opacity: 0.2;
+    }
+    h3 {
+      text-align: center;
+      font-size: 4vw;
+      font-weight: 700;
+      margin-top: -85px;
+    }
+    p {
+      text-align: center;
+    }
+
+    .btn {
+      @include flexCenter();
+    }
+  }
+
+  
+@media only screen and (max-width: 768px) {
+
+  .footer-contact {
+    h3 {
+      margin-top: 55px !important;
+      
+    }
+  }
+}

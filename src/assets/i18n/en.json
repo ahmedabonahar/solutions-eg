@@ -1,0 +1,78 @@
+{
+    "HEADER": {
+        "PORTFOLIO_LINK": "PORTFOLIO",
+        "ABOUT_IINK": "ABOUT US",
+        "CONTACT_LINK": "CONTACT US"
+    },
+    "HOME": {
+        "TITLE_SOLUTIONS": "SOLUTIONS",
+        "OUR_SERVICES_TITLE": "OUR SERVICES",
+        "OUR_SERVICES_DESC": "Our main purpose is to help clients by offering creative visual solutions.",
+        "EXPLORE": "Explore",
+        "FEASIBILITY_STUDY": "Feasibility study",
+        "FINANCAIL_CONSELLING": "Financial counselling",
+        "BUDGET_REVIW": "Budget reviw",
+        "DISCRETIONARY_BUDGET": "Discretionary Budget",
+        "FINANCIAL_STATEMENT": "Preparation of financial statement",
+        "PORTFOLIO_TITLE1": "PORTFOLIO SHOWCASE",
+        "PORTFOLIO_TITLE2": "PORTFOLIO.",
+        "PROJECT_NAME_1": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_2": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_3": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_4": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_5": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_6": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_7": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_8": "Lorem, ipsum dolor.",
+        "PROJECT_NAME_9": "Lorem, ipsum dolor.",
+        "BTN_REQUEST_SERVICES": "REQUEST A SERVICES",
+        "BTN_SHOW_ALL_PROJECTS": "SHOW ALL PROJECTS",
+        "ABOUT_TITLE1": "BEST SOLUTIONS",
+        "ABOUT_TITLE2": "FOR YOU",
+        "ABOUT_DESC": "",
+        "BTN_LEARN_MORE": "LEARN MORE ABOUT US"
+    },
+    "PORTFOLIO": {
+        "PORTFOLIO_TITLE1": "PORTFOLIO",
+        "PORTFOLIO_TITLE2": "OUR MOST IMPORTANT",
+        "PORTFOLIO_TITLE3": "PROJECTS"
+    },
+    "ABOUT": {
+        "WHO_WE_ARE": "Who We Are ?",
+        "OUR_SERVICES": "Our Services"
+    },
+    "CONTACT": {
+        "CONTACT_TITLE1": "CONTACT",
+        "CONTACT_TITLE2": "Let's Talk",
+        "CONTACT_TITLE3": "About Your project.",
+        "ASK_ME": "Feel free to ask me any question or let’s do to talk about our future collaboration.",
+        "GET_IN_TOUCH": "Get In Touch.",
+        "PLACEHOLDER_NAME": "Full name",
+        "PLACEHOLDER_MOBILE": "Mobile",
+        "PLACEHOLDER_EMAIL": "E-mail",
+        "PLACEHOLDER_MESSAGE": "Message",
+        "BTN_SEND_MESSAGE": "SEND MESSAGE",
+        "CONTACT_INFO": "Contact Info."
+    },
+    "STATISTIC": {
+        "FEASIBILITY_STUDY": "FEASIBILITY STUDY",
+        "YEARS_EXPERIENCE": "YEARS EXPERIENCE",
+        "PROJECTS": "PROJECTS"
+    },
+    "FOOTER_CONTACT": {
+        "LETIS_TALK": "LET’S TALK",
+        "NEXT_PROJECT": "ABOUT YOUR NEXT PROJECT.",
+        "BTN_GET_IN_TOUCH": "GET IN TOUCH"
+    },
+    "FOOTER": {
+        "EMAIL": "E-mail",
+        "ADDRESS": "Address",
+        "ADDRESS_DETAILS": "495 Al Haram st, Giza, Egypt",
+        "PHONE": "Phone",
+        "FOLLOW_US": "Follow Us",
+        "NEWSLATTER": "NEWSLATTER",
+        "SUBSCRIBE_NEWSLATTER": "Sign up for subscribe out newsletter !",
+        "PLACEHOLDER_EMAIL": "Your Email",
+        "SUBSCRIBE_BTN": "SUBSCRIBE"
+    }
+}

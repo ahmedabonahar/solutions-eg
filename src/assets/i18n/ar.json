@@ -1,0 +1,79 @@
+{
+    "HEADER": {
+        "PORTFOLIO_LINK": "مشروعاتنا",
+        "ABOUT_IINK": "عنًـا",
+        "CONTACT_LINK": "تواصل معنا"
+    },
+    "HOME": {
+        "TITLE_SOLUTIONS": "حلول",
+        "OUR_SERVICES_TITLE": "خدامتنا",
+        "OUR_SERVICES_DESC": "هدفنا الرئيسي هو مساعدة العملاء من خلال تقديم حلول بصرية إبداعية.",
+        "EXPLORE": "إكتشف",
+        "FEASIBILITY_STUDY": "دراسات الجدوى",
+        "FINANCAIL_CONSELLING": "الإستشارات المالية",
+        "BUDGET_REVIW": "مراجعة الميزانية",
+        "DISCRETIONARY_BUDGET": "إعداد موازنات تقديريه",
+        "FINANCIAL_STATEMENT": "إعداد قوائم مالية",
+        "PORTFOLIO_TITLE1": "آخر المشروعات",
+        "PORTFOLIO_TITLE2": "مشروعاتنا",
+        "PROJECT_NAME_1": "دراسة جدوى مشروع منتجع سياحى",
+        "PROJECT_NAME_2": "دراسة جدوى مصنع أدوات طبية",
+        "PROJECT_NAME_3": "دراسة جدوى مصنع الإلكترونيات",
+        "PROJECT_NAME_4": "دراسة جدوى مطعم سياحى",
+        "PROJECT_NAME_5": "دراسة جدوى مدينة فندقية",
+        "PROJECT_NAME_6": "دراسة جدوى شركة سفر وسياحة",
+        "PROJECT_NAME_7": "دراسة جدوى مركز صيانة وتشحيم وزيوت للسيارات",
+        "PROJECT_NAME_8": "دراسة جدوى مزرعة ومصنع ألبان",
+        "PROJECT_NAME_9": "دراسة جدوى صالون نسائى",
+        "BTN_REQUEST_SERVICES": "إطلب الخدمة",
+        "BTN_SHOW_ALL_PROJECTS": "شاهد جميع المشروعات",
+        "ABOUT_TITLE1": "أفضـل الحلول",
+        "ABOUT_TITLE2": "لأجلك",
+        "ABOUT_DESC": "",
+        "BTN_LEARN_MORE": "أعرف المزيد عنًـا"
+    },
+    "PORTFOLIO": {
+        "PORTFOLIO_TITLE1": "مشروعاتنا",
+        "PORTFOLIO_TITLE2": "أهـم وأبرز",
+        "PORTFOLIO_TITLE3": "مشروعاتنا"
+    },
+    "ABOUT": {
+        "WHO_WE_ARE": "من نحن ؟",
+        "OUR_SERVICES": "خدامتنا"
+    },
+    "CONTACT": {
+        "CONTACT_TITLE1": "تواصل معنا",
+        "CONTACT_TITLE2": "لنتحدث",
+        "CONTACT_TITLE3": "عن مشروعك القادم.",
+        "ASK_ME": "لا تتردد في طرح أي سؤال أو دعنا نتحدث عن تعاوننا المستقبلي.",
+        "GET_IN_TOUCH": "كن على تواصل",
+        "PLACEHOLDER_NAME": "الأسم كامل",
+        "PLACEHOLDER_MOBILE": "رقم الهاتف",
+        "PLACEHOLDER_EMAIL": "البريد الإلكترونى",
+        "PLACEHOLDER_MESSAGE": "رسالة",
+        "BTN_SEND_MESSAGE": "إرسـال",
+        "CONTACT_INFO": "معلومات التواصل"
+
+    },
+    "STATISTIC": {
+        "FEASIBILITY_STUDY": "دراسة جدوى",
+        "YEARS_EXPERIENCE": "سنين خبرة",
+        "PROJECTS": "مشاريع"
+    },
+    "FOOTER_CONTACT": {
+        "LETIS_TALK": "لنتحدث",
+        "NEXT_PROJECT": "عن مشروعك القادم.",
+        "BTN_GET_IN_TOUCH": "كُن على تواصل"
+    },
+    "FOOTER": {
+        "EMAIL": "البريد الإلكترونى",
+        "ADDRESS": "العنوان",
+        "ADDRESS_DETAILS": "شارع الهرم ، عقار رقم 495، االجيز، مصر",
+        "PHONE": "التليفون",
+        "FOLLOW_US": "تابعونا",
+        "NEWSLATTER": "النشرة الإخبارية",
+        "SUBSCRIBE_NEWSLATTER": "اشترك في النشرة الإخبارية!",
+        "PLACEHOLDER_EMAIL": "بريدك الإلكترونى",
+        "SUBSCRIBE_BTN": "إشترك"
+    }
+}
