@@ -10,6 +10,8 @@ import { ContactComponent } from './client/contact/contact.component';
 import { HeaderComponent } from './client/header/header.component';
 import { AboutComponent } from './client/about/about.component';
 import { PortfolioComponent } from './client/portfolio/portfolio.component';
+import {Globals} from './app.config';
+
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -43,7 +45,9 @@ import { StatisticComponent } from './client/statistic/statistic.component';
             })
     
   ],
-  providers: [],
+  providers: [
+    Globals
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

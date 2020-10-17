@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from 'src/app/app.config';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  data : any = [];
+
+  constructor(private global: Globals) {
+    this.data = this.global.staticProjects;
+   }
 
   ngOnInit(): void {
   }
