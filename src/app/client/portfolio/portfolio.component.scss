@@ -2,13 +2,13 @@
 
 
 .portfolio {
-    // height: 80vh;
     .bactxt {
         font-size: 16vw;
         font-weight: bold;
         color: transparent;
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
         text-align: center;
+        padding: 30px 0px;
     }
     
     .capt {
@@ -82,11 +82,7 @@
         font-size: 68.5%;
       }
   
-      }
-      
-    
-      
-      .grid figure 
+      }   
       
       .grid figure figcaption::before,
       .grid figure figcaption::after {
@@ -175,4 +171,16 @@
         transform: translate3d(0,0,0);
       }
     
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .uk-subnav {
+    justify-content: center;
+  }
+
+  .capt {
+    bottom: -3pc !important;
+  }
 }

@@ -2,7 +2,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "variables";
 
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -21,7 +20,6 @@ body {
   overflow-x: hidden !important;
   position: relative;
   background: $mainColor;
-
 }
 
 h1,
@@ -36,24 +34,22 @@ li,
 input,
 textarea,
 button {
-  font-family: 'El Messiri', sans-serif;
-    color: $textColor;
+  font-family: "El Messiri", sans-serif;
+  color: $textColor;
 }
 
 option {
-  font-family: 'El Messiri', sans-serif;
+  font-family: "El Messiri", sans-serif;
 }
 
 span {
-  font-family: 'El Messiri', sans-serif;
+  font-family: "El Messiri", sans-serif;
 }
 
 .overlay {
   height: 100vh;
   background: $overlayColor;
 }
-
-
 
 .btn-praimry {
   background: $btnColor;
@@ -68,8 +64,8 @@ span {
   margin: 1em 0.8em;
 }
 
-
-.btn-praimry::after, .btn-praimry::before {
+.btn-praimry::after,
+.btn-praimry::before {
   content: "";
   display: block;
   position: absolute;
@@ -95,7 +91,8 @@ span {
   border-top-color: $btnColor;
   border-left-color: $btnColor;
 }
-.btn-praimry:hover:after, .btn-praimry:hover:before {
+.btn-praimry:hover:after,
+.btn-praimry:hover:before {
   width: 100%;
   height: 100%;
 }
@@ -173,9 +170,6 @@ span {
   color: $mainColor;
 }
 
-
-
-
 .header-jumbotron {
   background-position: center;
   background-size: cover;
@@ -183,7 +177,6 @@ span {
   display: flex;
   align-items: center;
   position: relative;
-
 
   .overlay {
     position: absolute;
@@ -213,8 +206,6 @@ span {
   width: 55%;
   display: block;
   margin: 3rem auto;
-  
-
 
   .logo-box {
     width: 100%;
@@ -226,10 +217,9 @@ span {
 }
 
 .grey-side {
-  background-color: #4F5858;
+  background-color: #4f5858;
 
   .content-box {
-
     h2 {
       color: white;
     }
@@ -253,9 +243,8 @@ span {
 }
 
 .home {
-
-  .swiper-container-horizontal>.swiper-pagination-progressbar,
-  .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  .swiper-container-horizontal > .swiper-pagination-progressbar,
+  .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     left: 50% !important;
     top: auto;
     bottom: 85px !important;
@@ -271,9 +260,8 @@ span {
 }
 
 .design {
-
-  .swiper-container-horizontal>.swiper-pagination-progressbar,
-  .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  .swiper-container-horizontal > .swiper-pagination-progressbar,
+  .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     width: 300px;
     height: 4px;
     left: 50%;
@@ -285,7 +273,6 @@ span {
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: $mainColor;
   }
-
 
   .swiper-button-prev,
   .swiper-container-rtl .swiper-button-next {
@@ -311,10 +298,16 @@ span {
 }
 
 
+
+
 @media (max-width: 767px) {
+  .row {
+    margin: 0 !important;
+  }
   .order-1 {
     order: 2;
   }
+
 
   .order-2 {
     order: 1;
@@ -330,11 +323,16 @@ span {
   }
 
   h2 {
-    font-size: 6vw;
+    font-size: 10vw !important;
   }
 
   h3 {
-    font-size: 5vw;
+    font-size: 8vw !important;
+  }
+
+  h4 {
+    font-size: 4vw !important;
+    max-width: 100% !important;
   }
 
   p {
@@ -355,11 +353,9 @@ span {
     }
   }
 
-
   .home {
-
-    .swiper-container-horizontal>.swiper-pagination-progressbar,
-    .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    .swiper-container-horizontal > .swiper-pagination-progressbar,
+    .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
       bottom: 30px !important;
       width: 280px !important;
     }
@@ -392,8 +388,6 @@ span {
   }
 }
 
-
-
 // font arbic
 
 .arabic-font {
@@ -410,9 +404,27 @@ span {
     }
   }
 
-
+  
+.bactxt {
+  font-size: 16vw !important;
 }
 
+.sub-bg {
+  .img {
+      &::after {
+          left: 120px !important;
+          right: -300px !important;
+      }
+  }
+}
+  .our-services {
+    .icon {
+      svg {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
 
 /*--------------------------fonts----------------------------*/
 // @font-face {

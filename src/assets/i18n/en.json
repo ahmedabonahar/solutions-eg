@@ -35,7 +35,15 @@
     "PORTFOLIO": {
         "PORTFOLIO_TITLE1": "PORTFOLIO",
         "PORTFOLIO_TITLE2": "OUR MOST IMPORTANT",
-        "PORTFOLIO_TITLE3": "PROJECTS"
+        "PORTFOLIO_TITLE3": "PROJECTS",
+        "ALL_FILTER": "ALL",
+        "EGYPT_FILTER": "EGYPT",
+        "SAUDI_FILTER": "SAUDI",
+        "EMARAT_FILTER": "EMARAT",
+        "KUWAIT_FILTER": "KUWAIT",
+        "QATAR_FILTER": "QATAR",
+        "OMAN_FILTER": "OMAN",
+        "BAHRAIN_FILTER": "BAHRAIN"
     },
     "ABOUT": {
         "WHO_WE_ARE": "Who We Are ?",

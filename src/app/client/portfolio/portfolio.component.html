@@ -7,7 +7,7 @@
           PORTFOLIO.PORTFOLIO_TITLE1
         </span>
       </div>
-      <div class="col-lg-9 col-md-11 static">
+      <div class="col-lg-9 col-md-11 static mb-5">
         <div class="capt mt-50">
           <div class="parlx" style="transform: translate3d(0px, 0px, 0px); opacity: 1;">
             <h2 class="custom-font" translate><span
@@ -17,30 +17,27 @@
       </div>
     </div>
   </div>
-  <div class="justify-content-center uk-grid-divider uk-child-width-auto mt-5 mb-5" uk-grid>
+  <div class="justify-content-center uk-child-width-auto mt-5 mb-5" uk-grid>
     <div>
       <ul class="uk-subnav uk-subnav-pill" uk-margin>
-        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+        <li class="uk-active" uk-filter-control><a href="#" translate>PORTFOLIO.ALL_FILTER</a></li>
       </ul>
     </div>
     <div>
       <ul class="uk-subnav uk-subnav-pill" uk-margin>
-        <li uk-filter-control="filter: [data-color='white']; group: data-color"><a href="#">White</a></li>
-        <li uk-filter-control="filter: [data-color='blue']; group: data-color"><a href="#">Blue</a></li>
-        <li uk-filter-control="filter: [data-color='black']; group: data-color"><a href="#">Black</a></li>
-      </ul>
-    </div>
-    <div>
-      <ul class="uk-subnav uk-subnav-pill" uk-margin>
-        <li uk-filter-control="filter: [data-size='small']; group: size"><a href="#">Small</a></li>
-        <li uk-filter-control="filter: [data-size='medium']; group: size"><a href="#">Medium</a></li>
-        <li uk-filter-control="filter: [data-size='large']; group: size"><a href="#">Large</a></li>
+        <li uk-filter-control="filter: [data-location='egypt']; group: data-location"><a href="#" translate>PORTFOLIO.EGYPT_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='soudia']; group: data-location"><a href="#" translate>PORTFOLIO.SAUDI_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='emarat']; group: data-location"><a href="#" translate>PORTFOLIO.EMARAT_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='kuwait']; group: data-location"><a href="#" translate>PORTFOLIO.KUWAIT_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='qatar']; group: data-location"><a href="#" translate>PORTFOLIO.QATAR_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='oman']; group: data-location"><a href="#" translate>PORTFOLIO.OMAN_FILTER</a></li>
+        <li uk-filter-control="filter: [data-location='bahren']; group: data-location"><a href="#" translate>PORTFOLIO.BAHRAIN_FILTER</a></li>
       </ul>
     </div>
   </div>
   <div class="container-fluid mb-5">
     <ul class="js-filter uk-child-width-1-1 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
-      <li data-color="white" data-size="large" *ngFor="let projects of data">
+      <li *ngFor="let projects of data"  [attr.data-location]="projects.location" >
         <div class="grid">
           <figure class="effect-sadie">
             <img src="{{ projects.image }}" alt="img02" />

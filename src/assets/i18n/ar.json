@@ -1,7 +1,7 @@
 {
     "HEADER": {
         "PORTFOLIO_LINK": "مشروعاتنا",
-        "ABOUT_IINK": "عنًـا",
+        "ABOUT_IINK": "عنـــا",
         "CONTACT_LINK": "تواصل معنا"
     },
     "HOME": {
@@ -35,7 +35,15 @@
     "PORTFOLIO": {
         "PORTFOLIO_TITLE1": "مشروعاتنا",
         "PORTFOLIO_TITLE2": "أهـم وأبرز",
-        "PORTFOLIO_TITLE3": "مشروعاتنا"
+        "PORTFOLIO_TITLE3": "مشروعاتنا",
+        "ALL_FILTER": "الجميع",
+        "EGYPT_FILTER": "مصر",
+        "SAUDI_FILTER": "السعودية",
+        "EMARAT_FILTER": "الأمارات",
+        "KUWAIT_FILTER": "الكويت",
+        "QATAR_FILTER": "قطر",
+        "OMAN_FILTER": "عُمان",
+        "BAHRAIN_FILTER": "البحرين"
     },
     "ABOUT": {
         "WHO_WE_ARE": "من نحن ؟",

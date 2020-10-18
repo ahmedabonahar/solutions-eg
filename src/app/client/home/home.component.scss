@@ -17,7 +17,6 @@
     h4 {
       font-size: 3vw;
       max-width: 80%;
-      text-transform: uppercase;
     }
 
     p {
@@ -75,7 +74,7 @@
         font-size: 5vw;
         font-weight: 700;
         color: transparent;
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.836);
+        -webkit-text-stroke: 1px rgba(129, 101, 101, 0.836);
         opacity: 0.2;
       }
       h3 {
@@ -116,7 +115,7 @@
         backface-visibility: hidden;
       }
 
-      h2 {
+      h3 {
         word-spacing: -0.15em;
         font-weight: bolder;
         margin: 0;
@@ -168,12 +167,12 @@
       transform: translate3d(0, 50%, 0);
     }
 
-    figure.effect-sadie h2 {
+    figure.effect-sadie h3 {
       position: absolute;
       top: 50%;
       left: 0;
       width: 100%;
-      color: #484c61;
+      color: #ffffff;
       -webkit-transition: -webkit-transform 0.35s, color 0.35s;
       transition: transform 0.35s, color 0.35s;
       -webkit-transform: translate3d(0, -50%, 0);
@@ -197,7 +196,7 @@
       transform: translate3d(0, 10px, 0);
     }
 
-    figure.effect-sadie:hover h2 {
+    figure.effect-sadie:hover h3 {
       color: #fff;
       -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
       transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
@@ -242,23 +241,7 @@
   }
 }
 
-// section responsice
 
-@media only screen and (max-width: 768px) {
-  .our-services {
-    padding: 15px !important;
-  }
-
-  .about-us {
-    padding: 75px 15px !important;
-    h3 {
-      margin-top: 55px !important;
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-}
 
 * {
   user-select: none;
@@ -280,7 +263,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(".//../../../assets/img/2.jpg");
+  background-image: url(".//../../../assets/img/glitch.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -457,4 +440,27 @@
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 6s infinite linear alternate-reverse;
   padding: 15px 10px 10px;
+}
+
+
+// section responsice
+
+@media only screen and (max-width: 768px) {
+  .our-services {
+    padding: 15px !important;
+  }
+
+  .about-us {
+    padding: 75px 15px !important;
+    h3 {
+      margin-top: 55px !important;
+    }
+  }
+  .glitch {
+    font-size: 10vw !important;
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
 }
