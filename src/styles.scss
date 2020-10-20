@@ -297,9 +297,6 @@ span {
   content: none;
 }
 
-
-
-
 @media (max-width: 767px) {
   .row {
     margin: 0 !important;
@@ -307,7 +304,6 @@ span {
   .order-1 {
     order: 2;
   }
-
 
   .order-2 {
     order: 1;
@@ -404,23 +400,40 @@ span {
     }
   }
 
-  
-.bactxt {
-  font-size: 16vw !important;
-}
-
-.sub-bg {
-  .img {
-      &::after {
-          left: 120px !important;
-          right: -300px !important;
-      }
+  .contact {
+    .bactxt {
+      font-size: 12vw !important;
+    }
   }
-}
+
+  .bactxt {
+    font-size: 16vw !important;
+  }
+
+  .sub-bg {
+    .img {
+      &::after {
+        left: 120px !important;
+        right: -300px !important;
+      }
+    }
+  }
   .our-services {
     .icon {
       svg {
         transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .valign {
+    .feat {
+      li {
+        h5 {
+          span {
+            margin-left: 10px !important;
+          }
+        }
       }
     }
   }

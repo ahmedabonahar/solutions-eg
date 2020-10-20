@@ -51,11 +51,10 @@
                     height: 45px;
                     line-height: 45px;
                     text-align: center;
-                    background: rgb(255 255 255 / 4%);
+                    background: rgba(255, 255, 255, 0.01);
                     border-radius: 50%;
                     margin-right: 5px;
                     font-size: 13px;
-                    opacity: 0.6;
                     color: $btnColor;
                     transition: 0.3s ease-in-out all;
                     &:hover {

@@ -27,6 +27,12 @@
                     color: #999;
                     line-height: 1.7;
                 }
+
+                h5 {
+                    a {
+                        color: $btnColor;
+                    }
+                }
             }
             .social {
                 margin-top: 50px !important;
@@ -110,4 +116,11 @@
 }
 .copyrights p a {
     color: $btnColor;
+}
+
+@media (max-width: 767px) {
+    .bactxt {
+        height: 80vh;
+        padding: 30px 0px 100px 0px;
+    }
 }
