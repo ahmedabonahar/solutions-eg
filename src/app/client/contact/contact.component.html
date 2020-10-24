@@ -24,39 +24,80 @@
                 <div class="col-lg-6">
                     <div class="form md-mb50">
                         <h4 class="extra-title mb-50" translate>CONTACT.GET_IN_TOUCH</h4>
-                        <form id="contact-form" novalidate="true">
+                        <form #varform="ngForm" ngSubmit="subForm(varform)">
                             <div class="messages"></div>
                             <div class="controls">
                                 <div class="form-group has-error has-danger">
-                                    <input id="form_name" type="text" name="name"
-                                        placeholder="{{'CONTACT.PLACEHOLDER_NAME' |translate}}" required="required">
+                                    <input type="text" 
+                                    ngModel #fullName="ngModel" 
+                                    name="full_name"
+                                    placeholder="{{'CONTACT.PLACEHOLDER_NAME' |translate}}" 
+                                    required="required"
+                                    (keypress)="keyPressStr($event)">
+                                    <p *ngIf="fullName.invalid && fullName.touched" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_FULLNAME" | translate }}
+                                    </p>
                                 </div>
                                 <div class="form-group has-error has-danger">
-                                    <input id="form_name" type="text" name="name"
-                                        placeholder="{{'CONTACT.PLACEHOLDER_MOBILE' |translate}}" required="required">
+                                    <input ngModel #phone="ngModel" name="phone" type="tel" minlength="5" maxlength="15"
+                                        placeholder="{{'CONTACT.PLACEHOLDER_MOBILE' |translate}}" required="required"
+                                        (keypress)="keyPressNum($event)">
+                                    <p *ngIf="phone.invalid && phone.touched" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_PHONE" | translate }}
+                                    </p>
                                 </div>
-
                                 <div class="form-group has-error has-danger">
-                                    <input id="form_email" type="email" name="email"
+                                    <input ngModel #email="ngModel" name="email" type="email"
                                         placeholder="{{'CONTACT.PLACEHOLDER_EMAIL' |translate}}" required="required">
+                                    <p *ngIf="email.touched && email.errors?.required" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_EMAIL" | translate }}
+                                    </p>
+                                    <p *ngIf="email.touched && email.errors?.email" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_EMAIL_2" | translate }}
+                                    </p>
                                 </div>
                                 <div class="form-group has-error has-danger">
-                                <select class="form-control">
-                                    <option value="">Choose...</option>
-                                    <option translate>HOME.FEASIBILITY_STUDY</option>
-                                    <option translate>HOME.FINANCAIL_CONSELLING</option>
-                                    <option translate>HOME.BUDGET_REVIW</option>
-                                    <option translate>HOME.DISCRETIONARY_BUDGET</option>
-                                    <option translate>HOME.FINANCIAL_STATEMENT</option>
-                                  </select>
+                                    <input type="text"
+                                        ngModel #country="ngModel" 
+                                        name="country"
+                                        placeholder="{{'CONTACT.PLACEHOLDER_COUNTRY' |translate}}" 
+                                        required="required"
+                                        (keypress)="keyPressStr($event)">
+                                    <p *ngIf="country.invalid && country.touched" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_COUNTRY" | translate }}
+                                    </p>
                                 </div>
                                 <div class="form-group has-error has-danger">
-                                    <textarea id="form_message" name="message"
+                                    <select ngModel class="form-control" required name="service" #service="ngModel">
+                                        <option value="" translate>CONTACT.ALL_SERVICES</option>
+                                        <option value="Feasibility study" translate>HOME.FEASIBILITY_STUDY</option>
+                                        <option value="Financial counselling" translate>HOME.FINANCAIL_CONSELLING</option>
+                                        <option value="Budget reviewing" translate>HOME.BUDGET_REVIW</option>
+                                        <option value="Discretionary - financial forecasting" translate>HOME.DISCRETIONARY_BUDGET</option>
+                                        <option value="Preparation of financial statement" translate>HOME.FINANCIAL_STATEMENT</option>
+                                    </select>
+                                </div>
+                                <div class="form-group has-error has-danger">
+                                    <textarea ngModel #message="ngModel" name="message"
                                         placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' |translate}}" rows="7"
                                         required="required"></textarea>
+                                    <p *ngIf="message.invalid && message.touched &&
+                                        message.errors?.required" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_MSG_HELP" | translate }}
+                                    </p>
+                                    <p *ngIf="message.invalid &&
+                                        message.touched &&
+                                        message.errors?.minlength" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_MSG_HELP_2" | translate }}
+                                    </p>
+                                    <p *ngIf="message.invalid && message.touched &&
+                                        message.errors?.maxlenth" style="color:#ff7878">
+                                        {{ "CONTACT.ERORR_MSG_MSG_HELP_3" | translate }}
+                                    </p>
+
                                 </div>
-                                <button class="uk-button uk-button-default btn-praimry"
-                                    translate>CONTACT.BTN_SEND_MESSAGE</button>
+                                <button class="uk-button uk-button-default btn-praimry" [disabled]="varform.invalid"
+                                    (click)="subForm(varform)" type="submit" translate>CONTACT.BTN_SEND_MESSAGE</button>
                             </div>
                         </form>
                     </div>
@@ -65,41 +106,21 @@
                     <div class="cont-info">
                         <h4 class="extra-title mb-50" translate>CONTACT.CONTACT_INFO</h4>
                         <h3 class="custom-font wow words chars splitting animated" data-splitting=""
-                            style="visibility: visible; --word-total:2; --char-total:10;"><span class="word"
-                                data-word="Let's" style="--word-index:0;"><span class="char" data-char="L"
-                                    style="--char-index:0;">L</span><span class="char" data-char="e"
-                                    style="--char-index:1;">e</span><span class="char" data-char="t"
-                                    style="--char-index:2;">t</span><span class="char" data-char="'"
-                                    style="--char-index:3;">'</span><span class="char" data-char="s"
-                                    style="--char-index:4;">s</span></span><span class="whitespace"> </span><span
-                                class="word" data-word="Talk." style="--word-index:1;"><span class="char" data-char="T"
-                                    style="--char-index:5;">T</span><span class="char" data-char="a"
-                                    style="--char-index:6;">a</span><span class="char" data-char="l"
-                                    style="--char-index:7;">l</span><span class="char" data-char="k"
-                                    style="--char-index:8;">k</span><span class="char" data-char="."
-                                    style="--char-index:9;">.</span></span> </h3>
+                            style="visibility: visible; --word-total:2; --char-total:10;" translate>
+                            CONTACT.CONTACT_TITLE2<span>.</span></h3>
                         <div class="item mb-40">
-                            <h5><a href="#0">hello@solutions.com</a></h5>
-                            <h5>(+02) 01016616578</h5>
+                            <h5><a href="#0">hello@solutions-eg.org</a></h5>
+                            <h5 style="direction: ltr;">(+02) 01016616578</h5>
                         </div>
                         <h3 class="custom-font wow words chars splitting animated" data-splitting=""
-                            style="visibility: visible; --word-total:2; --char-total:8;"><span class="word"
-                                data-word="Visit" style="--word-index:0;"><span class="char" data-char="V"
-                                    style="--char-index:0;">V</span><span class="char" data-char="i"
-                                    style="--char-index:1;">i</span><span class="char" data-char="s"
-                                    style="--char-index:2;">s</span><span class="char" data-char="i"
-                                    style="--char-index:3;">i</span><span class="char" data-char="t"
-                                    style="--char-index:4;">t</span></span><span class="whitespace"> </span><span
-                                class="word" data-word="Us." style="--word-index:1;"><span class="char" data-char="U"
-                                    style="--char-index:5;">U</span><span class="char" data-char="s"
-                                    style="--char-index:6;">s</span><span class="char" data-char="."
-                                    style="--char-index:7;">.</span></span> </h3>
+                            style="visibility: visible; --word-total:2; --char-total:8;" translate>
+                            CONTACT.VISIT_US<span>.</span>
+                        </h3>
                         <div class="item">
-                            <h6>495 Al Haram st,
-                                <br>Giza, Egypt</h6>
+                            <h6 style="white-space: pre-wrap;" translate>CONTACT.LOCATION</h6>
                         </div>
                         <div class="social mt-50">
-                            <a href="#0" class="icon">
+                            <a href="https://www.facebook.com/just.solutions.eg" class="icon" target="_blanck">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             <a href="#0" class="icon">

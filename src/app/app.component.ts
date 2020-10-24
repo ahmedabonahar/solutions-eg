@@ -17,6 +17,8 @@ export class AppComponent {
   }
 
 
+  
+
   getBodyLang() {
     if (localStorage.getItem('lang'))
       if (localStorage.getItem('lang') == 'ar')

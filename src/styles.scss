@@ -38,7 +38,7 @@ button {
   color: $textColor;
 }
 
-option {
+option,select {
   font-family: "El Messiri", sans-serif;
 }
 
@@ -435,6 +435,12 @@ span {
           }
         }
       }
+    }
+  }
+
+  .cont-info {
+    h3 {
+    letter-spacing: 0 !important;
     }
   }
 }

@@ -21,7 +21,8 @@ export class HomeComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
     
-    // translate.setDefaultLang('en');
+    translate.setDefaultLang('en');
+    
 
   }
   // useLanguage(language: string) {

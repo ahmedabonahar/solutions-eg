@@ -12,6 +12,8 @@ import { AboutComponent } from './client/about/about.component';
 import { PortfolioComponent } from './client/portfolio/portfolio.component';
 import {Globals} from './app.config';
 
+import {FormsModule} from '@angular/forms';
+
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -34,6 +36,7 @@ import { StatisticComponent } from './client/statistic/statistic.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
             // ngx-translate and the loader module
             HttpClientModule,
             TranslateModule.forRoot({

@@ -69,12 +69,25 @@
         "ASK_ME": "لا تتردد في طرح أي سؤال أو دعنا نتحدث عن تعاوننا المستقبلي.",
         "GET_IN_TOUCH": "كن على تواصل",
         "PLACEHOLDER_NAME": "الأسم كامل",
+        "PLACEHOLDER_COUNTRY": "أسم البلد",
         "PLACEHOLDER_MOBILE": "رقم الهاتف",
         "PLACEHOLDER_EMAIL": "البريد الإلكترونى",
         "PLACEHOLDER_MESSAGE": "رسالة",
         "BTN_SEND_MESSAGE": "إرسـال",
-        "CONTACT_INFO": "معلومات التواصل"
-
+        "CONTACT_INFO": "معلومات التواصل",
+        "ALL_SERVICES": "جميع الخدمات",
+        "VISIT_US": "زورونا",
+        "LOCATION": "شارع الهرم، عقار رقم 495 \n الجيزة ، مصر",
+        "ERORR_MSG_FULLNAME": "الأسم مطلوب",
+        "ERORR_MSG_COUNTRY": "‌أسم البلد مطلوب",
+        "ERORR_MSG_EMAIL": "البريد الألكترونى مطلوب",
+        "ERORR_MSG_EMAIL_2": "ما أدخلته ليس بريد الإلكترونى",
+        "ERORR_MSG_PHONE": "رقم التليفون مطلوب",
+        "ERORR_MSG_PHONE_2": "يجب إن يكون رقم التليفون أكثر من 5 أرقام",
+        "ERORR_MSG_PHONE_3": "يجب إن يكون رقم التليفون أقل من 15 رقم",
+        "ERORR_MSG_MSG_HELP": "الرسالة مطلوبة",
+        "ERORR_MSG_MSG_HELP_2": "يجب إنك تكون الرسالة أكثر من 50 حرف",
+        "ERORR_MSG_MSG_HELP_3": "يجب إن تكون الرسالة أقل من 250 حرف"    
     },
     "STATISTIC": {
         "FEASIBILITY_STUDY": "دراسة جدوى",

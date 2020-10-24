@@ -5,16 +5,14 @@
 .uk-navbar-container {
   background: #ffffff00;
   @include flexCenter();
-  .uk-navbar-dropdown {
-    top: 60px !important;
-    left: 44% !important;
-    text-align: center;
-  }
   img {
     width: 10%;
+    padding-top: 15px;
   }
 
+  
 }
+
 
 .lang-btn {
   position: fixed;
@@ -32,16 +30,110 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $btnColor;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  color: $mainColor;
+  text-decoration: none;
+  h3 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: $mainColor;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+} 
+
+.sidebar a:hover {
+  color: #ffffff;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+
+#main {
+  transition: margin-left .5s;
+  z-index: 99999;
+  // padding: 16px;
+}
+
+
+
+.arrow {
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: $btnColor;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  text-shadow: 0 0 0 white, 20px 0 0 white, 20px 0 0 white, 40px 0 0 white;
+  transition: 0.6s linear;
+  transform: translate(50%, 50%);
+  cursor: pointer;
+}
+.arrow:hover {
+  text-shadow: 20px 0 0 white, 20px 0 0 white, 40px 0 0 white;
+}
+
+
+
+
+
+
 // section responsice
 
 @media only screen and (max-width: 768px) {
   img {
-    width: 20% !important;
+    width: 50% !important;
+    padding-top: 20px;
   }
   .lang-btn {
     .uk-button {
       padding: 0px 8px;
     }
+  }
+  .row {
+    flex-wrap: inherit !important;
   }
 }
 
