@@ -38,16 +38,32 @@
 .who-we-are {
     background: $priamryColor;
     padding: 115px;
+    hr {
+        margin: 50px 0px;
+        border-top: 0.01px solid $btnColor;
+    }
+    .htit {
+        h2 {
+            color: $btnColor;
+            font-weight: bold;
+        }
+    }
     .uk-card-default {
         background: $mainColor !important;
+        height: 22vh;
+
         transition: all 0.5s ease-in-out;
         &:hover {
             box-shadow: 0 6px 20px rgb(102 187 156);
         }
+        h3 {
+            color: #ffffff;
+        }
+        p {
+            color: #818181;
+        }
     }
-    .uk-card {
-        height: 22vh;
-    }
+  
 }
 
 

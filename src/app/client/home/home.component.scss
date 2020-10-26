@@ -90,7 +90,10 @@
       padding: 1em 0 4em;
       list-style: none;
       text-align: center;
-
+      .effect-sadie {
+        max-width: 100%;
+        max-height: 345px;  
+      }
       figure {
         position: relative;
         float: left;
@@ -119,6 +122,7 @@
         word-spacing: -0.15em;
         font-weight: 300;
         margin: 0;
+        padding: 20px;
       }
 
       p {
