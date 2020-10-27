@@ -17,12 +17,11 @@ declare var jQuery: any;
 })
 export class HomeComponent implements OnInit {
 
-  // arabic = false;
 
   constructor(private translate: TranslateService) {
-    
+
     translate.setDefaultLang('en');
-    
+
 
   }
   // useLanguage(language: string) {
@@ -36,10 +35,6 @@ export class HomeComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-
-
-
-
     $(document).ready(() => {
       $(window).scroll(e => {
         $('html, body').animate(
@@ -51,15 +46,13 @@ export class HomeComponent implements OnInit {
         // $("html, body").delay(2000).animate({scrollTop: $('#our-details').offset().top }, 2000);
         parallaxScroll();
       });
-
       function parallaxScroll() {
         let scrolled = $(window).scrollTop();
         $('.glitch').css('top', 0 - scrolled * 0.1 + 'px');
       }
-
     });
 
-
+    // to scroll
     (function ($) {
       $(function () {
         function scrollBanner() {
@@ -76,59 +69,8 @@ export class HomeComponent implements OnInit {
         }
         scrollBanner();
       });
-
     })(jQuery);
-
-
-
-    // Wrap every letter in a span for h1
-    var textWrapper = document.querySelector('.ml1 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml1 .letter',
-        scale: [0.3, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 600,
-        delay: (el, i) => 70 * (i + 1)
-      }).add({
-        targets: '.ml1 .line',
-        scaleX: [0, 1],
-        opacity: [0.5, 1],
-        easing: "easeOutExpo",
-        duration: 700,
-        offset: '-=875',
-        delay: (el, i, l) => 80 * (l - i)
-      }).add({
-        targets: '.ml1',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 10000000000
-      });
-
-
-
-
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'fade',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      simulateTouch: false,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
   }
+
 
 }
