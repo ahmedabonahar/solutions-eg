@@ -23,7 +23,7 @@ class SubscribeAPI(APIView):
         data = request.data
         email = Subscriber(email=data['email'])
         email.save()
-        subject, from_email, to = 'Subscribe', 'hello@solutions-eg.org', 'masben_98@hotmail.com'
+        subject, from_email, to = 'Subscribe', 'hello@solutions-eg.org', data['email']
         text_content = 'Subscribe'
         #  ==========================================================================
         html_content = '<strong>You have subscribed to solutions-eg successfully</strong> '
@@ -58,11 +58,11 @@ class ContactUs(APIView):
       data = request.data
       subject, from_email, to = 'Contact', 'hello@solutions-eg.org', 'hello@solutions-eg.org'
       text_content = 'Contact Email'
-      html_content = '<strong>Name:</strong> ' + data['name']
+      html_content = '<strong>Name:</strong> ' + data['full_name']
       html_content += '<br><strong>Country:</strong> ' + data['country']
       html_content += '<br><strong>Email:</strong> ' + data['email']
-      html_content += '<br><strong>Phone</strong> ' + data['phone']
-      html_content += '<br><strong>Service</strong> ' + data['service']
+      html_content += '<br><strong>Phone:</strong> ' + data['phone']
+      html_content += '<br><strong>Service:</strong> ' + data['service']
       html_content += '<br><strong>Message:</strong> ' + data['message']
       # ============================================================================
       msg = EmailMultiAlternatives(

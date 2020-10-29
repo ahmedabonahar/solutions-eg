@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
 export class ApiService {
 
   // add here ya bor3y
-  baseURL = '';
+  baseURL = 'https://solutions-eg.org/';
+  // baseURL = 'http://127.0.0.1:8000/';
 
 
   baseImageURL = this.baseURL + '/';
@@ -20,11 +21,11 @@ export class ApiService {
 
 
   addContactUs(data): Observable<any> {
-    return this.http.post(this.baseURL + '/', data, {headers: this.httpHeaders});
+    return this.http.post(this.baseURL + 'contact-api', data, {headers: this.httpHeaders});
   }
 
   addNewsletter(email): Observable<any> {
-    return this.http.post(this.baseURL + '/', {'email': email}, {headers: this.httpHeaders});
+    return this.http.post(this.baseURL + 'subscribe-api', {'email': email}, {headers: this.httpHeaders});
   }
 
   
