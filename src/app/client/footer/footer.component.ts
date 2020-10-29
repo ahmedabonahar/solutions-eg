@@ -20,12 +20,18 @@ export class FooterComponent implements OnInit {
   }
 
   onSubmit(form) {
+    console.log(form.value);
+    
     this.api.addNewsletter(form.value.email).subscribe(
       data => {
+        console.log(data);
+        
         this.successSubmission = true;
         setTimeout(() => { this.successSubmission = false; }, 5000);
       },
       error => {
+        console.log(error);
+        
         this.failedSubmission = true;
         // this.errorMsg = error.error.email;
         setTimeout(() => { this.failedSubmission = false; }, 3000);

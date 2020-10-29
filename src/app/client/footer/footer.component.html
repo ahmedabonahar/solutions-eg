@@ -41,7 +41,7 @@
                     <p translate>FOOTER.SUBSCRIBE_NEWSLATTER</p>
                     <form #newsletterForm="ngForm" (ngSubmit)="onSubmit(newsletterForm.form)">
                         <div class="form-group custom-font">
-                            <input type="email" name="subscribe" placeholder="{{'FOOTER.PLACEHOLDER_EMAIL' | translate  }}">
+                            <input   ngModel #email="ngModel"  type="email" name="email" placeholder="{{'FOOTER.PLACEHOLDER_EMAIL' | translate  }}">
                             <button [disabled]="!newsletterForm.valid" class="cursor-pointer" translate>FOOTER.SUBSCRIBE_BTN</button>
                         </div>
                     </form>

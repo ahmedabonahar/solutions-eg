@@ -25,6 +25,8 @@ export class ApiService {
   }
 
   addNewsletter(email): Observable<any> {
+    console.log(email);
+    
     return this.http.post(this.baseURL + 'subscribe-api', {'email': email}, {headers: this.httpHeaders});
   }
 
