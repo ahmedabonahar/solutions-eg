@@ -196,17 +196,7 @@ span {
     }
   }
 
-  .home {
-    .swiper-container-horizontal > .swiper-pagination-progressbar,
-    .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-      bottom: 30px !important;
-      width: 280px !important;
-    }
 
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-      background: white;
-    }
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -234,12 +224,16 @@ span {
 // font arbic
 
 .arabic-font {
+  direction: rtl !important;
+  text-align: right !important;
+  
   #main {
     padding-right: 15% !important;
   }
-  direction: rtl !important;
-  text-align: right !important;
 
+  h6.custom-font.stit.simple-btn {
+    letter-spacing: 0px;
+  }
   .footer-sec {
     .contact-info {
       margin-right: 15% !important;

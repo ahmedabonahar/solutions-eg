@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+ 
+  successSubmission = false;
+  failedSubmission = false;
+  errorMsg = '';
 
-  ngOnInit(): void {
+  constructor(private api: ApiService) {
   }
+
+  ngOnInit() {
+  }
+
+  onSubmit(form) {
+    this.api.addNewsletter(form.value.email).subscribe(
+      data => {
+        this.successSubmission = true;
+        setTimeout(() => { this.successSubmission = false; }, 5000);
+      },
+      error => {
+        this.failedSubmission = true;
+        // this.errorMsg = error.error.email;
+        setTimeout(() => { this.failedSubmission = false; }, 3000);
+      }
+    )
+    form.reset();
+  }
+
 
 }
