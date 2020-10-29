@@ -27,7 +27,5 @@ export class ApiService {
     return this.http.post(this.baseURL + '/', {'email': email}, {headers: this.httpHeaders});
   }
 
-
-
   
 }
