@@ -1,0 +1,14 @@
+Contact:
+	url: /contact-api
+	variables:
+		1-name
+		2-country
+		3-email
+		4-phone
+		5-service
+		6-message
+Subscribe:
+	url: /subscribe-api
+	variables:
+		1-email
+	response:is_subscribed : true 
