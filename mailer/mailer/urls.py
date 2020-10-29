@@ -19,7 +19,7 @@ from subscribe.views import ContactUs
 
 urlpatterns = [
   path('admin/', admin.site.urls),
-  path('subscribe', include('subscribe.urls')),
-  path('contact', ContactUs.as_view()),
+  path('subscribe-api', include('subscribe.urls')),
+  path('contact-api', ContactUs.as_view()),
 
 ]

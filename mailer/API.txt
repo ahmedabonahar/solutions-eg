@@ -1,5 +1,5 @@
 Contact:
-	url: /contact
+	url: /contact-api
 	variables:
 		1-name
 		2-country
@@ -8,7 +8,7 @@ Contact:
 		5-service
 		6-message
 Subscribe:
-	url: /subscribe
+	url: /subscribe-api
 	variables:
 		1-email
 	response:is_subscribed : true 
