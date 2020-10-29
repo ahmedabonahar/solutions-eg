@@ -121,9 +121,3 @@ db.sqlite3
 db.sqlite3/
 # Visual Studio Code
 .db.sqlite3
-
-
-**migrations/
-**/migrations/
-**/migrations
-**migrations
