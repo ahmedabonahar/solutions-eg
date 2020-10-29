@@ -46,7 +46,7 @@ class SubscribeAPI(APIView):
         return Response(status.HTTP_200_OK)
       except Exception as e:
         print(e)
-        return Response({'exception':str(e)},status.HTTP_200_OK)
+        return Response({'exception': str(e)}, status.HTTP_200_OK)
 
 
 class ContactUs(APIView):
