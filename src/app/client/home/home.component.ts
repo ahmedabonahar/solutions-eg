@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { Globals } from 'src/app/app.config';
 
 
-declare var Swiper: any;
 declare var $: any;
-declare var UIkit: any;
-declare var anime: any;
 declare var jQuery: any;
 
 
@@ -18,21 +16,12 @@ declare var jQuery: any;
 export class HomeComponent implements OnInit {
 
 
-  constructor(private translate: TranslateService) {
-
-    translate.setDefaultLang('en');
-
+  constructor(private translate: TranslateService, private title: Title) {
+    this.translate.setDefaultLang('en');
+    this.title.setTitle('Solutions - Consulting Agency, Financial Service');
 
   }
-  // useLanguage(language: string) {
-  //   this.translate.use(language);
-  //   console.log(this.translate.use(language))
-  //   localStorage.setItem('lang', language);
-  //   if (language == 'ar')
-  //     this.arabic = true;
-  //   else
-  //     this.arabic = false;
-  // }
+
 
   ngOnInit(): void {
     $(document).ready(() => {
@@ -71,6 +60,5 @@ export class HomeComponent implements OnInit {
       });
     })(jQuery);
   }
-
 
 }

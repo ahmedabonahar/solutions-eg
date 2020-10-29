@@ -4,10 +4,6 @@ import { DomSanitizer, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { ApiService } from 'src/app/api.service';
 
-
-declare var $: any;
-
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -15,18 +11,16 @@ declare var $: any;
 })
 export class ContactComponent implements OnInit {
 
-  currentLang = localStorage.getItem('lang');
-  iframeUrl;
-  errorMessage;
-  successMessage;
-
-
+  showMsg: boolean = false;
+  showMsgErorr: boolean= false;
+  errorMsg =[];
 
   constructor(private http: HttpClient,
     public api: ApiService,
-    private translate: TranslateService,
     public sanitizer: DomSanitizer,
-    private title: Title) { }
+    private title: Title) {
+      this.title.setTitle('Solutions | Contact');
+    }
 
   ngOnInit(): void {
   }
@@ -38,13 +32,13 @@ export class ContactComponent implements OnInit {
       data => {
           form.reset();
           window.scrollTo(0, 0)
+          this.showMsg = true;
       },
       error => {
-        // this.showMsgErorr = true;
-        // this.errorMsg = error.error;
+        this.showMsgErorr = true;
+        this.errorMsg = error.error;
       }
     )
-
   }
 
 

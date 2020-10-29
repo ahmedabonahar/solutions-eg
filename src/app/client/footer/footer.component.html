@@ -22,15 +22,15 @@
                             <a href="https://www.facebook.com/just.solutions.eg" class="icon" target="_blanck">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#0" class="icon">
+                            <a href="https://twitter.com/sollutions_eg" class="icon" target="_blanck">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#0" class="icon">
-                                <i class="fab fa-pinterest"></i>
+                            <a href="https://www.instagram.com/just.solutions.eg/" class="icon" target="_blanck">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#0" class="icon">
+                            <!-- <a href="#0" class="icon">
                                 <i class="fab fa-behance"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -39,10 +39,10 @@
                 <div class="subscribe mb-50">
                     <h6 class="custom-font stit simple-btn" translate>FOOTER.NEWSLATTER</h6>
                     <p translate>FOOTER.SUBSCRIBE_NEWSLATTER</p>
-                    <form>
+                    <form #newsletterForm="ngForm" (ngSubmit)="onSubmit(newsletterForm.form)">
                         <div class="form-group custom-font">
                             <input type="email" name="subscribe" placeholder="{{'FOOTER.PLACEHOLDER_EMAIL' | translate  }}">
-                            <button class="cursor-pointer" translate>FOOTER.SUBSCRIBE_BTN</button>
+                            <button [disabled]="!newsletterForm.valid" class="cursor-pointer" translate>FOOTER.SUBSCRIBE_BTN</button>
                         </div>
                     </form>
                 </div>

@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
+  // add here ya bor3y
   baseURL = '';
 
 
@@ -18,12 +19,13 @@ export class ApiService {
 
 
 
-
   addContactUs(data): Observable<any> {
-    return this.http.post(this.baseURL + '/api/submit/', data, {headers: this.httpHeaders});
+    return this.http.post(this.baseURL + '/', data, {headers: this.httpHeaders});
   }
 
-
+  addNewsletter(email): Observable<any> {
+    return this.http.post(this.baseURL + '/', {'email': email}, {headers: this.httpHeaders});
+  }
 
   
 }

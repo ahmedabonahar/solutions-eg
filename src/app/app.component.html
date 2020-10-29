@@ -2,9 +2,9 @@
     <div class="circle">
         <div class="cut">
         </div>
-      </div>
+    </div>
 </div>
 
-    <div *ngIf="!loading" [ngClass]="{'arabic-font': getBodyLang()}">
-        <router-outlet (activate)="onActivate($event)"></router-outlet>
-    </div>
+<div *ngIf="!loading" [ngClass]="{'arabic-font': getBodyLang()}">
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+</div>
