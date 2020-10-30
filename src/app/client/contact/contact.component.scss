@@ -12,6 +12,20 @@
     .contact-info {
         background: $priamryColor;
         padding: 50px 0px;
+        .success {
+            background: $btnColor !important;
+            a,
+            p {
+                color: $mainColor;
+            }
+        }
+        .err {
+            background: #964949 !important;
+            a,
+            p {
+                color: #ffff;
+            }
+        }
         .cont-info {
             h3 {
                 font-size: 18px;

@@ -92,6 +92,7 @@
         "ERORR_MSG_MSG_HELP_3": "يجب إن تكون الرسالة أقل من 250 حرف"    
     },
     "STATISTIC": {
+        "COUSTOMERS": "شريك نجاح",
         "FEASIBILITY_STUDY": "دراسة جدوى",
         "YEARS_EXPERIENCE": "سنين خبرة",
         "PROJECTS": "مشاريع"

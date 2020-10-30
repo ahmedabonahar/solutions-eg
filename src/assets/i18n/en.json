@@ -92,6 +92,7 @@
         "ERORR_MSG_MSG_HELP_3": "Message shoud be -250 Charrachters"    
     },
     "STATISTIC": {
+        "COUSTOMERS": "COUSTOMERS",
         "FEASIBILITY_STUDY": "FEASIBILITY STUDY",
         "YEARS_EXPERIENCE": "YEARS EXPERIENCE",
         "PROJECTS": "PROJECTS"

@@ -20,10 +20,18 @@
     </div>
     <div class="contact-info">
         <div class="container">
+            <div class="uk-alert success" uk-alert *ngIf="showMsg">
+                <a class="uk-alert-close" uk-close></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-alert err" uk-alert *ngIf="showMsgErorr">
+                <a class="uk-alert-close" uk-close></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="form md-mb50">
-                        <h4 class="extra-title mb-50" translate>CONTACT.GET_IN_TOUCH</h4>
+                        <h2 class="extra-title mb-50" translate>CONTACT.GET_IN_TOUCH</h2>
                         <form #varform="ngForm" ngSubmit="subForm(varform)">
                             <div class="messages"></div>
                             <div class="controls">
@@ -104,7 +112,7 @@
                 </div>
                 <div class="col-md-5 offset-lg-1">
                     <div class="cont-info">
-                        <h4 class="extra-title mb-50" translate>CONTACT.CONTACT_INFO</h4>
+                        <h2 class="extra-title mb-50" translate>CONTACT.CONTACT_INFO</h2>
                         <h3 class="custom-font wow words chars splitting animated" data-splitting=""
                             style="visibility: visible; --word-total:2; --char-total:10;" translate>
                             CONTACT.CONTACT_TITLE2<span>.</span></h3>
