@@ -3,7 +3,8 @@
         "HOME_LINK": "HOME",
         "PORTFOLIO_LINK": "PORTFOLIO",
         "ABOUT_IINK": "ABOUT US",
-        "CONTACT_LINK": "CONTACT US"
+        "CONTACT_LINK": "CONTACT US",
+        "START_CHAT": "Start chat on WhatsApp"
     },
     "HOME": {
         "TITLE_SOLUTIONS": "SOLUTIONS",
@@ -79,7 +80,7 @@
         "CONTACT_INFO": "Contact Info.",
         "ALL_SERVICES": "All services",
         "VISIT_US": "VISITUS",
-        "LOCATION": "495 Al Haram st \n Giza, Egypt",
+        "LOCATION": "Al Makarunah st \nMakkah, Jeddah \nThe Kingdom Saudi Arabia",
         "ERORR_MSG_FULLNAME": "Name is required",
         "ERORR_MSG_COUNTRY": "Country name is required",
         "ERORR_MSG_EMAIL": "Email is required",
@@ -105,7 +106,7 @@
     "FOOTER": {
         "EMAIL": "E-mail",
         "ADDRESS": "Address",
-        "ADDRESS_DETAILS": "495 Al Haram st, Giza, Egypt",
+        "ADDRESS_DETAILS": "Al Makarunah st \nMakkah, Jeddah \nThe Kingdom Saudi Arabia",
         "PHONE": "Phone",
         "FOLLOW_US": "Follow Us",
         "NEWSLATTER": "NEWSLATTER",

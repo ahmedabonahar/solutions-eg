@@ -107,6 +107,18 @@
 }
 
 
+.whats-app-link {
+  position: fixed;
+  right: 24px;
+  /* top: 0; */
+  bottom: 40px;
+  z-index: 99999;
+  a {
+    &:hover {
+    text-decoration: none;      
+    }
+  }
+}
 
 
 

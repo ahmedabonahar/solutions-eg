@@ -1,37 +1,37 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
   <div class="row">
 
-  <div class="col-md-3">
-  <div id="mySidebar" class="sidebar">
-    <a class="closebtn" (click)="closeNav()">×</a>
-    <a routerLink="">
-      <h3 translate>HEADER.HOME_LINK</h3>
-    </a>
-    <a routerLink="/portfolio">
-      <h3 translate>HEADER.PORTFOLIO_LINK</h3>
-    </a>
-    <a routerLink="/about">
-      <h3 translate>HEADER.ABOUT_IINK</h3>
-    </a>
-    <a routerLink="/contact">
-      <h3 translate>HEADER.CONTACT_LINK</h3>
-    </a>
-  </div>
-  <div id="main">
-    <i class="fas fa-angle-right arrow" (click)="openNav()"></i>
-  </div>
-</div>
-  <nav class="uk-navbar-container col-md-6" uk-navbar style="position: relative; z-index: 980;">
-    <div class="uk-navbar-left">
-      <ul class="uk-navbar-nav">
-        <li>
-          <a *ngIf="!arabic" routerLink="/"><img src="./../../../assets/img/en-logo.png" alt=""></a>
-          <a *ngIf="arabic" routerLink="/"><img src="./../../../assets/img/ar-logo.png" alt=""></a>
-        </li>
-      </ul>
+    <div class="col-md-3">
+      <div id="mySidebar" class="sidebar">
+        <a class="closebtn" (click)="closeNav()">×</a>
+        <a routerLink="">
+          <h3 translate>HEADER.HOME_LINK</h3>
+        </a>
+        <a routerLink="/portfolio">
+          <h3 translate>HEADER.PORTFOLIO_LINK</h3>
+        </a>
+        <a routerLink="/about">
+          <h3 translate>HEADER.ABOUT_IINK</h3>
+        </a>
+        <a routerLink="/contact">
+          <h3 translate>HEADER.CONTACT_LINK</h3>
+        </a>
+      </div>
+      <div id="main">
+        <i class="fas fa-angle-right arrow" (click)="openNav()"></i>
+      </div>
     </div>
-  </nav>
-</div>
+    <nav class="uk-navbar-container col-md-6" uk-navbar style="position: relative; z-index: 980;">
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a *ngIf="!arabic" routerLink="/"><img src="./../../../assets/img/en-logo.png" alt=""></a>
+            <a *ngIf="arabic" routerLink="/"><img src="./../../../assets/img/ar-logo.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
 <div class="lang-btn">
   <div *ngIf="arabic">
@@ -40,4 +40,9 @@
   <div *ngIf="!arabic">
     <button class="uk-button uk-button-default" (click)="useLanguage('ar')">العربية</button>
   </div>
+</div>
+
+<div class="whats-app-link">
+  <a title="{{ 'HEADER.START_CHAT' | translate }}" href="https://api.whatsapp.com/send?phone=0966550517754" target="_blanck"> <i class="fab fa-whatsapp"
+      style="color: #25d366d9; font-size: 40PX;"></i>&nbsp;</a>
 </div>
