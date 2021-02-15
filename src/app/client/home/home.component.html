@@ -15,32 +15,25 @@
     </div>
   </div>
   <app-header></app-header>
-  <!-- OUR SERVICES -->
-  <div class="our-services" id="target">
+
+  
+  <!-- ABOUT US  -->
+  <section class="about-us">
     <div class="row">
       <div class="col-md-8">
-        <h2 translate>HOME.OUR_SERVICES_TITLE</h2>
-        <h4 translate>HOME.OUR_SERVICES_DESC</h4>
-        <p class="title-three" translate>HOME.EXPLORE
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-              <defs></defs>
-              <path fill-rule="nonzero"
-                d="M10.152 12.793l4.824-4.304v1.73L9.524 15l-5.451-4.78V8.488l4.824 4.304-.001-11.46H0V0h10.152v12.793z">
-              </path>
-            </svg>
-          </span>
-        </p>
-        <ul class="uk-list uk-list-divider">
-          <li routerLink="/about" translate>HOME.FEASIBILITY_STUDY</li>
-          <li routerLink="/about" translate>HOME.FINANCAIL_CONSELLING</li>
-          <li routerLink="/about" translate>HOME.BUDGET_REVIW</li>
-          <li routerLink="/about" translate>HOME.DISCRETIONARY_BUDGET</li>
-          <li routerLink="/about" translate>HOME.FINANCIAL_STATEMENT</li>
-        </ul>
+        <h2 translate>HOME.ABOUT_TITLE1</h2>
+        <h3 translate>HOME.ABOUT_TITLE2</h3>
+        <p translate>HOME.ABOUT_DESC</p>
+      </div>
+      <div class="col-md-12 btn">
+        <button class="uk-button uk-button-default btn-praimry" translate
+          routerLink="/about">HOME.BTN_LEARN_MORE</button>
       </div>
     </div>
-  </div>
+  </section>
+
+
+
   <!-- PORTFOLIO -->
   <div class="portfolio">
     <div class="container-fluid">
@@ -160,21 +153,33 @@
 
   <app-statistic></app-statistic>
 
-  <!-- ABOUT US  -->
-  <section class="about-us">
-    <div class="row">
-      <div class="col-md-8">
-        <h2 translate>HOME.ABOUT_TITLE1</h2>
-        <h3 translate>HOME.ABOUT_TITLE2</h3>
-        <p translate>HOME.ABOUT_DESC</p>
-      </div>
-      <div class="col-md-12 btn">
-        <button class="uk-button uk-button-default btn-praimry" translate
-          routerLink="/about">HOME.BTN_LEARN_MORE</button>
+
+    <!-- OUR SERVICES -->
+    <div class="our-services" id="target">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 translate>HOME.OUR_SERVICES_TITLE</h2>
+          <h4 translate>HOME.OUR_SERVICES_DESC</h4>
+          <p class="title-three" translate>HOME.EXPLORE
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                <defs></defs>
+                <path fill-rule="nonzero"
+                  d="M10.152 12.793l4.824-4.304v1.73L9.524 15l-5.451-4.78V8.488l4.824 4.304-.001-11.46H0V0h10.152v12.793z">
+                </path>
+              </svg>
+            </span>
+          </p>
+          <ul class="uk-list uk-list-divider">
+            <li routerLink="/about" translate>HOME.FEASIBILITY_STUDY</li>
+            <li routerLink="/about" translate>HOME.FINANCAIL_CONSELLING</li>
+            <li routerLink="/about" translate>HOME.BUDGET_REVIW</li>
+            <li routerLink="/about" translate>HOME.DISCRETIONARY_BUDGET</li>
+            <li routerLink="/about" translate>HOME.FINANCIAL_STATEMENT</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
-
   <app-footer-contact></app-footer-contact>
 
 </section>
