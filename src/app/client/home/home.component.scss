@@ -2,7 +2,7 @@
 
 .home-parent {
   .our-services {
-    padding: 25px 0px;
+    padding: 100px 0px;
     .row {
       @include flexCenter();
     }
@@ -217,7 +217,7 @@
   .about-us {
     background: $priamryColor;
 
-    padding: 50px 0px;
+    padding: 100px 0px;
     .row {
       @include flexCenter();
     }
