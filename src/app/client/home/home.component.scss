@@ -254,45 +254,97 @@
 
 // arrow down
 
-.scroll-down {
+
+
+.arrows {
+  width: 60px;
+  height: 72px;
   position: absolute;
-  bottom: 2.5rem;
   left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: -30px;
+  bottom: 20px;
 }
 
-.scroll {
-  width: 2rem;
-  height: 4rem;
-  border: 2px solid var(--white);
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.arrows path {
+  stroke:  $btnColor;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
 }
 
-.scroll span {
-  width: 0.8rem;
-  height: 0.8rem;
-  display: block;
-  background: var(--white);
-  border-radius: 50%;
-  animation: cursor-slide 1.15s linear infinite;
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 }
 
-.arrow-down {
-  width: 0.8rem;
-  height: 0.8rem;
-  border: 2px solid transparent;
-  border-right-color: var(--white);
-  border-bottom-color: var(--white);
-  transform: rotate(45deg);
-  margin-top: 0.3rem;
-  animation: arrow-pulse 1.15s linear infinite;
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 }
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
+
+// .scroll-down {
+//   position: absolute;
+//   bottom: 2.5rem;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .scroll {
+//   width: 2rem;
+//   height: 4rem;
+//   border: 2px solid var(--white);
+//   border-radius: 2rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .scroll span {
+//   width: 0.8rem;
+//   height: 0.8rem;
+//   display: block;
+//   background: var(--white);
+//   border-radius: 50%;
+//   animation: cursor-slide 1.15s linear infinite;
+// }
+
+// .arrow-down {
+//   width: 0.8rem;
+//   height: 0.8rem;
+//   border: 2px solid transparent;
+//   border-right-color: var(--white);
+//   border-bottom-color: var(--white);
+//   transform: rotate(45deg);
+//   margin-top: 0.3rem;
+//   animation: arrow-pulse 1.15s linear infinite;
+// }
 
 /* Keyframes */
 
