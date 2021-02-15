@@ -111,13 +111,27 @@
   position: fixed;
   right: 24px;
   /* top: 0; */
-  bottom: 40px;
+  bottom: 100px;
   z-index: 99999;
   a {
     &:hover {
     text-decoration: none;      
     }
   }
+
+  
+  // img {
+  
+  //   display: none
+  // }
+  // &:hover img {
+  //   display: block;
+  //   right: 60px;
+  //   position: absolute;
+  //   bottom: 60px;
+  //   width: 24vw;
+  //   height: 35vh;
+  // }
 }
 
 
