@@ -12,11 +12,11 @@ declare var Expo: any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  arabic = false;
+  arabic = true;
 
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('ar');
   }
 
   ngOnInit(): void {
