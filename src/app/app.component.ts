@@ -66,7 +66,7 @@ export class AppComponent {
   }
 
   resetLang() {
-    localStorage.setItem('lang', 'en')
+    localStorage.setItem('lang', 'ar')
   }
 
 

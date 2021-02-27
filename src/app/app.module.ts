@@ -20,6 +20,8 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { StatisticComponent } from './client/statistic/statistic.component';
+import { BlogsComponent } from './client/blogs/blogs.component';
+import { BlogDetailsComponent } from './client/blog-details/blog-details.component';
   
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { StatisticComponent } from './client/statistic/statistic.component';
     AboutComponent,
     PortfolioComponent,
     StatisticComponent,
+    BlogsComponent,
+    BlogDetailsComponent,
   ],
   imports: [
     BrowserModule,

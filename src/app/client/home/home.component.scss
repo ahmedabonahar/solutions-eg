@@ -92,7 +92,7 @@
       text-align: center;
       .effect-sadie {
         max-width: 100%;
-        max-height: 345px;  
+        max-height: 345px;
       }
       figure {
         position: relative;
@@ -214,42 +214,39 @@
     }
   }
 
-  .about-us {
+  .about-us-parent {
     background: $priamryColor;
+    .about-us {
+      padding: 100px 0px;
+      .row {
+        @include flexCenter();
+      }
+      h2 {
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.836);
+        opacity: 0.2;
+      }
+      h3 {
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 700;
+        margin-top: -85px;
+      }
+      p {
+        text-align: center;
+      }
 
-    padding: 100px 0px;
-    .row {
-      @include flexCenter();
-    }
-    h2 {
-      text-align: center;
-      font-size: 5vw;
-      font-weight: 700;
-      color: transparent;
-      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.836);
-      opacity: 0.2;
-    }
-    h3 {
-      text-align: center;
-      font-size: 4vw;
-      font-weight: 700;
-      margin-top: -85px;
-    }
-    p {
-      text-align: center;
-    }
-
-    .btn {
-      @include flexCenter();
+      .btn {
+        @include flexCenter();
+      }
     }
   }
 }
 
-
-
 // arrow down
-
-
 
 .arrows {
   width: 60px;
@@ -261,45 +258,57 @@
 }
 
 .arrows path {
-  stroke:  $btnColor;
+  stroke: $btnColor;
   fill: transparent;
-  stroke-width: 1px;  
+  stroke-width: 1px;
   animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+  -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
 }
 
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
-
-
 
 // .scroll-down {
 //   position: absolute;
@@ -362,7 +371,7 @@
     opacity: 0.25;
   }
   50% {
-    opacity: 0.50;
+    opacity: 0.5;
   }
   75% {
     opacity: 0.75;
@@ -371,9 +380,6 @@
     opacity: 1;
   }
 }
-
-
-
 
 .over-lay {
   background: linear-gradient(to bottom, #11141bad, $mainColor);
@@ -568,7 +574,6 @@
   padding: 15px 10px 10px;
 }
 
-
 // section responsice
 
 @media only screen and (max-width: 768px) {
@@ -584,7 +589,6 @@
   }
   .glitch {
     font-size: 10vw !important;
-
   }
 }
 

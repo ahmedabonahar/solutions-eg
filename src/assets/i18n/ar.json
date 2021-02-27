@@ -2,6 +2,7 @@
     "HEADER": {
         "HOME_LINK": "الرئيسية",
         "PORTFOLIO_LINK": "مشروعاتنا",
+        "BLOGS_LINIK": "مدونتنا",
         "ABOUT_IINK": "عنـــا",
         "CONTACT_LINK": "تواصل معنا",
         "START_CHAT": "أبدأ محادثة واتساب من هنا"
@@ -91,6 +92,11 @@
         "ERORR_MSG_MSG_HELP": "الرسالة مطلوبة",
         "ERORR_MSG_MSG_HELP_2": "يجب إنك تكون الرسالة أكثر من 50 حرف",
         "ERORR_MSG_MSG_HELP_3": "يجب إن تكون الرسالة أقل من 250 حرف"    
+    },
+    "BLOG": {
+        "BLOG_TITLE1": "مدونتنا",
+        "BLOG_TITLE2": "آخر",
+        "BLOG_TITLE3": "أخبارنا"
     },
     "STATISTIC": {
         "COUSTOMERS": "شريك نجاح",

@@ -2,6 +2,7 @@
     "HEADER": {
         "HOME_LINK": "HOME",
         "PORTFOLIO_LINK": "PORTFOLIO",
+        "BLOGS_LINIK": "BLOGS",
         "ABOUT_IINK": "ABOUT US",
         "CONTACT_LINK": "CONTACT US",
         "START_CHAT": "Start chat on WhatsApp"
@@ -91,6 +92,11 @@
         "ERORR_MSG_MSG_HELP": "Message is required",
         "ERORR_MSG_MSG_HELP_2": "Message shoud be +50 Charrachters",
         "ERORR_MSG_MSG_HELP_3": "Message shoud be -250 Charrachters"    
+    },
+    "BLOG": {
+        "BLOG_TITLE1": "BLOGS",
+        "BLOG_TITLE2": "LATEST",
+        "BLOG_TITLE3": "OUR NEWS"
     },
     "STATISTIC": {
         "COUSTOMERS": "COUSTOMERS",

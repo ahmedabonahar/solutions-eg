@@ -20,6 +20,8 @@ body {
   overflow-x: hidden !important;
   position: relative;
   background: $mainColor;
+  // direction: rtl;
+  // text-align: right;
 }
 
 h1,
@@ -288,28 +290,3 @@ span {
     }
   }
 }
-
-/*--------------------------fonts----------------------------*/
-// @font-face {
-//   font-family: GEAwtar;
-//   font-display: auto;
-//   src: url("assets/fonts/Primary/Tajawal/Tajawal-Regular.ttf") format("truetype");
-// }
-
-// // @font-face {
-// //   font-family: ph_regular;
-// //   font-display: auto;
-// //   src: url("assets/fonts/Primary/Philosopher/philosopher-regular.woff2") format("woff2");
-// // }
-
-// // @font-face {
-// //   font-family: ph_bold;
-// //   font-display: auto;
-// //   src: url("assets/fonts/Primary/Philosopher/philosopher-bold.woff2") format("woff2");
-// // }
-
-// @font-face {
-//   font-family: GEDinkum;
-//   font-display: auto;
-//   src: url("assets/fonts/Secondary/GEDinkum-Regular.woff2") format("woff2");
-// }

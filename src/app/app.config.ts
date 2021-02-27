@@ -133,4 +133,8 @@ export class Globals {
         },
 
     ]
+
+    blogs = [
+        
+    ]
 }
