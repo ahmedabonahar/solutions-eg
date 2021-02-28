@@ -134,7 +134,13 @@ export class Globals {
 
     ]
 
-    blogs = [
-        
-    ]
+    // blogs = [
+    //     {
+    //         id: "1",
+    //         blogTitle: "ماهي دراسة الجدوي؟ ",
+    //         image: "../assets/img/1.jpg",
+    //         blogSomeDesc: "Feasibility study of a Resort.",
+    //         blogDesc: "egypt"
+    //     },
+    // ]
 }
